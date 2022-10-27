@@ -1,0 +1,246 @@
+/*Laskeutumissivun nappi*/
+.buttons{
+	margin: 35px 855px;
+  display: flex;
+}
+ button{
+	height: 50px;
+  display: flex;
+	width: 200px;
+	font-size: 24px;
+	font-weight: 600;
+	color: white;
+	background: red;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 25px;
+	transition: .9s;
+  display: flex;
+}
+.buttons button:hover{
+	background: green;
+  display: flex;
+}
+/* Hävittää linkeistä alleviivauksen */
+a {
+	color: red;
+	text-decoration: none; 
+  }
+/*Päänavikaation muokkaus*/
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(25, 25, 25);
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.navbar ul li a:hover{
+	background: red;
+	border-radius: 2px;
+}
+
+
+  /*Sivuston muokkaus*/
+  html, body, #page-one, #page-two, #page-three, #page-four {
+    height:auto;
+    min-height: 100vh;
+	  margin: 0px;
+    background-image: url(tausta.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  #page-one, #page-two, #page-three, #page-four {padding-top:4em;}
+  h1 {font-size:5em; padding-top:2em; text-align:center; color: #ddd;}
+  
+  /*Tekstin muokkaus tässä*/
+  p { 
+	  text-align: center;
+	  text-decoration-style:inherit;
+    margin-inline-start: 300px;
+    margin-inline-end: 300px;
+    font-size: 25px;
+    color:#ddd;
+  }
+
+  /*Githubin linkki*/
+  figcaption{
+		text-align: center;
+	  text-decoration-style:inherit;
+    margin-inline-start: 300px;
+    margin-inline-end: 300px;
+    margin: 20px;
+    font-size: 25px;
+    color:#ddd;
+	} 
+
+  /*Taulukoiden muokkaus*/
+  table {
+    border-collapse:collapse;
+    background-color: white;
+  }
+  td {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px;
+	  color: #ffffff;
+	  padding: 30px;
+	  font-size: 30px;
+	  background-color: rgb(0, 0, 0);
+}
+  hr {
+    border: 1px solid #D4342D;
+    margin: 20px 0;
+    clear: both;
+  }
+  
+  table, th, td {
+    border: 2px solid red;
+    border-collapse: collapse;
+  }
+  td, th {
+    padding: 1em;
+  }
+  body {
+    font-family: Arial, Verdana, sans-serif;
+  }
+  /*id luokan demo muokkaukset*/
+  #demo {
+    width: auto;
+    }
+
+    /*input muokkaukset*/
+    #updateadd-form-wrap {
+      background-color: black;
+      width: 40%;
+      margin: 15px auto;
+      text-align: center;
+      color: white;
+      padding: 20px 0 0 0;
+      border-radius: 4px;
+      box-shadow: 0px 30px 50px 0px red;
+    }
+    input {
+      display: block;
+      box-sizing: border-box;
+      text-align: center;
+      width: 100%;
+      outline: none;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 4px;
+      padding: 0 60px;
+    }
+    
+    
+    input[type="Submit"] {
+      border: none;
+      display: block;
+      background-color: black;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      font-size: 15px;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+    }
+    input[type="submit"]:hover {
+      background-color: red;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+
+/*html #Team-Page/
+/*Tässä Bg paikalla*/
+html #Team-Page {
+	box-sizing: border-box;
+	margin: 0, 2vw; 
+	height: auto;
+	min-height: 100vh;
+	margin: 0px;
+	background-image: url(bg1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+  }
+
+   /*Tästä alkaa profilecontainer muokkaukset*/
+   .column {
+    float: left;
+    width: 25%;
+    margin-bottom: 20px;
+    padding: 1vw 1vw;
+    margin-left: 4vw;
+    }
+    
+    @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+    }
+    .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    background-color: rgb(37, 37, 37);
+    
+    }
+  
+    .profilepic {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    height: 500px;
+  }
+  .profilepic img {
+      flex-shrink:contain;
+      min-width: 100%;
+      min-height: 100%
+  }
+    
+    .container {
+    padding: 0 16px;
+    margin-inline: 0 2vw;
+    }
+   
+    
+    .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    
+    .title {
+    color: grey;
+    font-size: 20px;
+    }
+  
+    .text-in-column{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 6px;
+    } 

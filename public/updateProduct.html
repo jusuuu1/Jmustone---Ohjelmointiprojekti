@@ -1,0 +1,41 @@
+<!--Kerrotaan selainta tiedoston olevan HTML koodia-->
+<!DOCTYPE html>
+<html lang="en">
+<!--Kaikki HTML-elmentit html elementin sisään-->
+<head>
+    <!--Tiedot sivusta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verkkokayppa</title>
+    <!--Linkitetty css-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--Sivulla näkyvät elementit-->
+    <!--Navigointivalikko-->
+    <nav class="navbar">
+        <ul>
+            <li><a href="products.html">Tuotteet</a></li>
+            <li><a href="githubmongo.html">Github&Mongo</a></li> 
+            <li><a href="contact.html">Yhteystiedot</a></li> 
+        </ul>
+    </nav>
+    <!--Tuotteen päivittämistaulukko-->	
+    <div id="updateadd-form-wrap">
+    <h1>Tuotetiedot</h1>
+    <form method="POST" action="/updateProduct">
+        <input name="_id" id="_id" hidden>
+        <label for="Manufacterer">Valmistaja<input type="text" name="Manufacturer" id="Manufacturer"></label>
+        <label for="Model">Malli<input type="text" name="Model" id="Model"></label>
+        <label for="Price">Hinta<input type="text" name="Price" id="Price"></label>
+        <label for="ProductCategory">Tuotteen kategoria<input type="text" name="ProductCategory" id="ProductCategory"></label>
+        <label for="Color">Väri<input type="text" name="Color" id="Color"></label>
+        <input type="submit" value="Päivitä">
+    </form>
+    <!--Skripti, joka päivittää taulukkoa-->
+    <script src="update.js" async defer></script>
+    <!--Skripti, joka luo taulukon-->
+    <script src="front.js" async defer></script>
+</body>
+</html>
